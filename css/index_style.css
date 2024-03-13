@@ -1,0 +1,172 @@
+body {
+    background-color: burlywood;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.brand-logo {
+    width: 180px;
+    height: 100px;
+}
+
+.collapse a {
+    background-image: linear-gradient(to right, #755e49, #755e49 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapse a:before {
+    content: "";
+    background: #755e49;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapse a:hover {
+    background-position: 0;
+}
+
+.collapse a:hover::before {
+    width: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/PRLX_BG.jpg);
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h1 {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    filter: drop-shadow(2px 2px 2px black);
+    -webkit-text-stroke: burlywood 1px;
+    font-size: 4em;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url(../img/TEDDY_PRLX.jpg);
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 h1 {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    filter: drop-shadow(2px 2px 2px black);
+    -webkit-text-stroke: burlywood 1px;
+    font-size: 4em;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    height: 90vh;
+}
+
+.best-seller {
+    font-size: 4em;
+    filter: drop-shadow(2px 2px 2px black);
+    -webkit-text-stroke: burlywood 1px;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.animated-text {
+    animation: moveText 2s ease infinite alternate; /* Name of animation, duration, timing function, iteration count, direction */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move 10 pixels to the left */
+    }
+    100% {
+        transform: translateY(10px); /* Move 10 pixels to the right */
+    }
+}
+
+.content {
+    height: auto;
+    background-color: burlywood;
+}
+
+.card {
+    width: 20rem;
+    height:min-content;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.card img {
+    height: 12rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+footer img {
+    width: 30%;
+    height: 30%;
+}
